@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <!-- Logo -->
+
+    <h1 id="logo">WeatherApp</h1>
+    <div class='main-header'>
+
+
+        <div class='header-container'>
+            <div class='header-content'>
+                <form id="form">
+                    <input class='city-inp' type='text' placeholder='CITY NAME' />
+                    <div class='btns'>
+                        <button type='submit' id='sub' class='btn inp'>
+                            Submit City
+                        </button>
+                        <button id='coord' class='btn loc'>
+                            Current Location
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="loading-container"></div>
+
+        <div class='info-container'>
+            <div class="error-container"></div>
+            <div class="info-content">
+            
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="assets/script.js"></script> -->
+    <script src="assets/functions.js"></script>
+    <script>
+        form.addEventListener('submit', getCityNameInfo)
+
+        coordBtn.addEventListener('click', getCoordInfo)
+    </script>
+</body>
+
+</html>
